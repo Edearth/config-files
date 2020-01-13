@@ -6,16 +6,22 @@
 !.Xresources
 !.zshrc
 
-!.config
+!.config/
+!.config/i3
 !.config/i3/config
 #add i3 blocks when finished
+!.config/dunst
 !.config/dunst/dunstrc
+!.config/picom
 !.config/picom/picom.conf
+!.config/rofi
 !.config/rofi/config
 !.config/rofi/onedark.rasi
+!.config/termite
 !.config/termite/config
 
 #Scripts referenced inside i3 config
+!Scripts
 !Scripts/crop_screenshot
 !Scripts/full_screenshot
 
