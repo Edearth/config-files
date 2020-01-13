@@ -1,11 +1,5 @@
 !Update X server by running `xrdb -merge ~/.Xresources`
 
-UXTerm*termName: xterm-256color
-UXTerm*faceName: Noto Sans Emoji
-!UXTerm*renderFont: true
-!UXTerm*faceName: DeJavu Sans Mono
-UXTerm*faceSize: 18
-
 ! @edearth: Solarized color scheme
 #define S_base03        #002b36
 #define S_base02        #073642

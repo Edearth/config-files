@@ -9,8 +9,6 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# @edearth: remember you left comments like this one to remind you of what you changed. What follows is a section of changes that were included by you
-
 set $bg-color            #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -64,7 +62,6 @@ font pango:Noto Sans Mono 14
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-# @edearth: set keyboard layout to spanish
 exec "setxkbmap -layout es"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
