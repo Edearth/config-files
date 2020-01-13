@@ -6,6 +6,7 @@
 !.Xresources
 !.zshrc
 
+!.config
 !.config/i3/config
 #add i3 blocks when finished
 !.config/dunst/dunstrc
