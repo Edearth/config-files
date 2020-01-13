@@ -1,0 +1,20 @@
+# ignore everything
+*
+
+# except these files
+!.gitignore
+!.Xresources
+!.zshrc
+
+!.config/i3/config
+#add i3 blocks when finished
+!.config/dunst/dunstrc
+!.config/picom/picom.conf
+!.config/rofi/config
+!.config/rofi/onedark.rasi
+!.config/termite/config
+
+#Scripts referenced inside i3 config
+!Scripts/crop_screenshot
+!Scripts/full_screenshot
+
