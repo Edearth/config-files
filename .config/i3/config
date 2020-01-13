@@ -105,6 +105,9 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# add empty window
+bindsym $mod+o open
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
