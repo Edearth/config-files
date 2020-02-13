@@ -1,0 +1,8 @@
+#!/bin/sh
+current_volume=`amixer sget Master,0 | grep "Front.*Playback.*"`
+if [[ $current_volume = *"off"* ]]; then
+	echo "--"
+else
+	echo $current_volume | head -1 | sed 's/.*\[\(.*\)%\].*/\1/'
+fi
+

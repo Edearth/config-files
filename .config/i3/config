@@ -27,9 +27,9 @@ focus_follows_mouse no
 
 # Volume control key binding
 
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 10%+ unmute && get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Volume up'"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 10%- unmute && get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Volume down'"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle && get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Toggle mute'"
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 10%+ unmute && ~/Scripts/get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Volume up'"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 10%- unmute && ~/Scripts/get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Volume down'"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle && ~/Scripts/get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Toggle mute'"
 # '[{}%]Toggle mute'"
 
 # Screen brightness key binding
