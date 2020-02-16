@@ -133,3 +133,9 @@ echo "Date: `date '+%a %W %b %Y | %H:%M'`"
 #enable screen wrap
 printf '\033[?7h'
 
+
+PATH="/home/edearth/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/edearth/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/edearth/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/edearth/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/edearth/perl5"; export PERL_MM_OPT;

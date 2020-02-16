@@ -20,6 +20,9 @@
 !.config/rofi/onedark.rasi
 !.config/termite
 !.config/termite/config
+!.config/polybar
+!.config/polybar/config
+!.config/polybar/launch-polybar.sh
 
 #Scripts referenced inside i3 config
 !Scripts
