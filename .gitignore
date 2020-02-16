@@ -23,6 +23,10 @@
 !.config/polybar
 !.config/polybar/config
 !.config/polybar/launch-polybar.sh
+!.config/newsboat/
+!.config/newsboat/config
+!.config/newsboat/urls
+!.config/newsboat/newsboat-browser.sh
 
 #Scripts referenced inside i3 config
 !Scripts
