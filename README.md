@@ -1,6 +1,6 @@
 # config files
 
 * Need to write this description
-* Need to set up + configure polybar
-* Need to update all colors to match the same schema
+* Need to update all colors to match the same schema (use wpgtk for this, it's based on pywal; or just use pywal you lazy fuck!)
+* Configure Nemo or another graphical file manager in case someone else needs to use your computer (and to drag and drop files, that's always nice)
 
