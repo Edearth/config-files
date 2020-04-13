@@ -28,7 +28,7 @@ alert = #bd2c40
 [bar/bottom_bar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 26
+height = 16
 bottom = true
 
 background = ${colors.background}
@@ -41,13 +41,13 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 2
 
-font-0 = "Noto Sans Mono:size=12;4"
-font-1 = "Noto Emoji:scale=10;4"
+font-0 = "Noto Sans Mono:size=10;4"
+font-1 = "Noto Emoji:scale=14;4"
 
 modules-left = powermenu i3
 ;modules-center = mpd
@@ -356,7 +356,7 @@ screenchange-reload = true
 ;pseudo-transparency = false
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini
