@@ -335,7 +335,7 @@ label-separator-foreground = ${colors.foreground-alt}
 menu-0-0 = Apps
 menu-0-0-exec = exec i3-dmenu-desktop --dmenu="rofi -dmenu -i -matching fuzzy -p 'Run' -theme \"~/.config/rofi/onedark.rasi\""
 menu-0-1 = Files
-menu-0-1-exec = exec thunar
+menu-0-1-exec = exec thunar &
 menu-0-2 = Reboot
 menu-0-2-exec = menu-open-1
 menu-0-3 = Power off
