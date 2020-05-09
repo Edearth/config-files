@@ -40,6 +40,9 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 5 -time 0 && xbacklight -get
 bindsym --release Print exec "~/Scripts/full_screenshot" 
 bindsym --release Shift+Print exec "~/Scripts/crop_screenshot" 
 
+# emoji selector
+bindsym $mod+e exec "~/Scripts/select-emoji.sh"
+
 # 3 finger swipe to change workspace
 bindsym --whole-window button19 workspace prev
 bindsym --whole-window button17 workspace next
@@ -120,7 +123,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
