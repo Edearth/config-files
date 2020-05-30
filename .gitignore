@@ -35,4 +35,5 @@
 !Scripts/get-current-volume
 !Scripts/emojis-unicode
 !Scripts/select-emoji.sh
-
+!Scripts/remindmeto
+!Scripts/alert-sound
