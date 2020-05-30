@@ -5,6 +5,9 @@
   export ZSH="/home/edearth/.oh-my-zsh"
 
 # @edearth: PATH and Environment Variables
+ANDROID_HOME=$HOME/Android/Sdk
+PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+
 XDG_CONFIG_HOME=~/.config/xdg_config
 PATH=$HOME/Scripts:$PATH
 PATH=/home/edearth/.gem/ruby/2.6.0/bin:$PATH
