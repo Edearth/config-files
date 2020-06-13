@@ -22,6 +22,6 @@ else:
 END
 ) || exit 1
 
-echo "notify-send -t 0 'Reminder' '$message' && play '$alert_sound'" \
+echo "notify-send -t 0 'Reminder' \"$message\" && play '$alert_sound'" \
   | at -t "$parsed_date"
 
