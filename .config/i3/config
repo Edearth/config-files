@@ -225,7 +225,7 @@ new_window 1pixel
 
 #aesthetic
 exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
-exec feh --bg-fill ~/Pictures/wallpapers/calm/1578684620033.jpg
+exec "cat ~/Scripts/wallpaper | xargs -I {} feh --bg-fill {}"
 
 # Make Godot game window floating
 for_window [instance="Godot_Engine"] floating enable
