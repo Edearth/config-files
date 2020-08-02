@@ -20,6 +20,8 @@
 !.config/rofi/onedark.rasi
 !.config/termite
 !.config/termite/config
+!.config/kitty
+!.config/kitty/kitty.conf
 !.config/polybar
 !.config/polybar/config
 !.config/polybar/launch-polybar.sh
