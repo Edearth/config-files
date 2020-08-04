@@ -34,7 +34,7 @@ if [ "$list_flag" == "1" ]; then
   echo "$aur_packages_to_update"
 else
   pacman_packages_to_update=`pacman -Qu | wc -l`
-  aur_packages_to_update=`echo "$aur_packages_to_update" | wc -l`
+  aur_packages_to_update=`echo "$aur_packages_to_update" | sed '/^\s*$/d' | wc -l`
   if [ $pacman_packages_to_update -eq 0 -a $aur_packages_to_update -eq 0 ]; then
     echo "Nothing to update" >&2
     exit 0
