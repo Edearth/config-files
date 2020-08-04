@@ -51,7 +51,7 @@ font-1 = "Noto Emoji:scale=14;4"
 
 modules-left = powermenu i3
 ;modules-center = mpd
-modules-right = cpu memory filesystem wlan battery date
+modules-right = cpu memory filesystem wlan package-updates battery date
 
 tray-position = none
 ;tray-padding = 2
@@ -350,6 +350,12 @@ menu-2-0 = Power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = Cancel
 menu-2-1-exec = menu-open-0
+
+[module/package-updates]
+type = custom/script
+format-prefix = "📦 "
+exec = ~/Scripts/check-updates 2>/dev/null
+interval = 86400
 
 [settings]
 screenchange-reload = true

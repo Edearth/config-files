@@ -1,0 +1,44 @@
+#!/bin/bash
+
+list_flag=0
+if [[ -n "$1" ]]; then
+  if [ "list" == "$1" ]; then
+    echo "Showing list of packages to update"
+    list_flag=1
+  fi
+fi
+
+check_aur_packages () {
+  app="$1"
+
+  cd "$HOME/Apps/$app"
+  git fetch &>/dev/null
+
+  commits_behind="0"
+  commits_behind=`git status -bs "$HOME/Apps/$app" | head -n 1 | grep -o "\[behind [0-9]*\]" | grep -o "[0-9]*"`
+
+  if [[ -n "$commits_behind" ]]; then
+    if [ "$commits_behind" -ne "0" ]; then
+        echo "~/Apps/$app is '$commits_behind' commits behind"
+    fi
+  fi
+}
+export -f check_aur_packages
+
+aur_packages_to_update=`ls "$HOME/Apps" | parallel check_aur_packages "{} $list_flag"`
+
+if [ "$list_flag" == "1" ]; then
+  echo " > Pacman packages to update:"
+  pacman -Qu
+  echo -e "\n > AUR packages to update:"
+  echo "$aur_packages_to_update"
+else
+  pacman_packages_to_update=`pacman -Qu | wc -l`
+  aur_packages_to_update=`echo "$aur_packages_to_update" | wc -l`
+  if [ $pacman_packages_to_update -eq 0 -a $aur_packages_to_update -eq 0 ]; then
+    echo "Nothing to update" >&2
+    exit 0
+  fi
+  echo "$pacman_packages_to_update ($aur_packages_to_update)"
+fi
+
