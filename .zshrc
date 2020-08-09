@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias open="xdg-open"
 
 # @edearth: if on virtual console, use .Xresources color scheme
 if [ "$TERM" = "linux" ]; then
