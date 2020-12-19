@@ -51,7 +51,7 @@ font-1 = "Noto Emoji:scale=14;4"
 
 modules-left = powermenu i3
 ;modules-center = mpd
-modules-right = cpu memory filesystem wlan package-updates battery date
+modules-right = temperature cpu memory filesystem wlan package-updates battery date
 
 tray-position = none
 ;tray-padding = 2
@@ -301,8 +301,8 @@ animation-charging-framerate = 2000
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
+thermal-zone = 7
+warn-temperature = 70
 
 format = <ramp> <label>
 format-underline = #f50a4d
