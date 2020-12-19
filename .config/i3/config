@@ -25,12 +25,17 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 # CHANGES_START
 focus_follows_mouse no
 
+# start a terminal
+set $TERMINAL kitty
+bindsym $mod+Return exec $TERMINAL
+
 # Volume control key binding
 
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 10%+ unmute && ~/Scripts/get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Volume up'"
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 10%- unmute && ~/Scripts/get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Volume down'"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle && ~/Scripts/get-current-volume | xargs -I {} notify-send -h string:x-canonical-private-synchronous:volume-notification '[{}%] Toggle mute'"
-# '[{}%]Toggle mute'"
+bindsym Shift+XF86AudioRaiseVolume exec $TERMINAL pamix
+bindsym Shift+XF86AudioLowerVolume exec $TERMINAL pamix
 
 # Screen brightness key binding
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5 -time 0 && xbacklight -get | sed -E 's/\.[0-9]*//g' | xargs -I {} notify-send -h string:x-canonical-private-synchronous:brightness-notification '[{}%] Brightness up'"
@@ -69,9 +74,6 @@ exec "setxkbmap -layout es"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
