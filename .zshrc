@@ -8,6 +8,10 @@
 ANDROID_HOME=$HOME/Android/Sdk
 PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
+# enable smooth scrolling in firefox
+MOZ_USE_XINPUT2=1
+export MOZ_USE_XINPUT2
+
 XDG_CONFIG_HOME=~/.config/xdg_config
 PATH=$HOME/Scripts:$PATH
 PATH=/home/edearth/.gem/ruby/2.6.0/bin:$PATH
@@ -136,7 +140,6 @@ echo $HELLO_MESSAGE
 echo "Date: `date '+%a %W %b %Y | %H:%M'`"
 #enable screen wrap
 printf '\033[?7h'
-
 
 PATH="/home/edearth/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/edearth/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
