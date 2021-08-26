@@ -44,6 +44,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 5 -time 0 && xbacklight -get
 # Screenshot key binding
 bindsym --release Print exec "~/Scripts/full_screenshot" 
 bindsym --release Shift+Print exec "~/Scripts/crop_screenshot" 
+bindsym --release Ctrl+Print exec "~/Scripts/window_screenshot"
 
 # emoji selector
 bindsym $mod+e exec "~/Scripts/select-emoji.sh"
