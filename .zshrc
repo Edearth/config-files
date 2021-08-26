@@ -8,6 +8,9 @@
 ANDROID_SDK_ROOT=/opt/android-sdk
 PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
+EDITOR='vim'
+VISUAL='vim'
+
 PYTHON_USER_SITE="$HOME/.local"
 PATH="$PYTHON_USER_SITE/bin:$PATH"
 # enable smooth scrolling in firefox
