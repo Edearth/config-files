@@ -5,8 +5,8 @@
   export ZSH="/home/edearth/.oh-my-zsh"
 
 # @edearth: PATH and Environment Variables
-ANDROID_HOME=$HOME/Android/Sdk
-PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+ANDROID_SDK_ROOT=/opt/android-sdk
+PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 # enable smooth scrolling in firefox
 MOZ_USE_XINPUT2=1
