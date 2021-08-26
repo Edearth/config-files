@@ -1,1 +1,2 @@
 browser "~/.config/newsboat/newsboat-browser.sh"
+include /usr/share/doc/newsboat/contrib/colorschemes/inkpot
