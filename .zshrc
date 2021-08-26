@@ -8,6 +8,8 @@
 ANDROID_SDK_ROOT=/opt/android-sdk
 PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
+PYTHON_USER_SITE="$HOME/.local"
+PATH="$PYTHON_USER_SITE/bin:$PATH"
 # enable smooth scrolling in firefox
 MOZ_USE_XINPUT2=1
 export MOZ_USE_XINPUT2
