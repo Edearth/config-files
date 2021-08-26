@@ -6,6 +6,7 @@ if emoji=$(cat ~/Scripts/emojis-unicode | rofi -dmenu -i -p 'Select emoji' -l 10
 	emoji="$(echo -n $emoji | cut -f1 -d' ')"
 	echo -n "$emoji" | xclip -selection clipboard
 	echo -n "$emoji" | xclip -selection primary
+	sleep 0.2
 	xdotool key shift+Insert
 	echo -n "$old_clipboard" | xclip -selection clipboard
 	echo -n "$old_primary" | xclip -selection primary
