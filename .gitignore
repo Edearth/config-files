@@ -29,6 +29,7 @@
 !.config/newsboat/config
 !.config/newsboat/urls
 !.config/newsboat/newsboat-browser.sh
+!.config/zathura
 !.config/zathura/zathurarc
 
 #Scripts referenced inside i3 config
