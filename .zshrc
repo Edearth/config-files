@@ -13,9 +13,6 @@ VISUAL='vim'
 
 PYTHON_USER_SITE="$HOME/.local"
 PATH="$PYTHON_USER_SITE/bin:$PATH"
-# enable smooth scrolling in firefox
-MOZ_USE_XINPUT2=1
-export MOZ_USE_XINPUT2
 
 XDG_CONFIG_HOME=~/.config/xdg_config
 PATH=$HOME/Scripts:$PATH
