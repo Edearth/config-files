@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# Workaround to make Steam create config files in XDG directories
+# See: https://github.com/ValveSoftware/steam-for-linux/issues/1890#issuecomment-394128930
+
+HOME=$XDG_DATA_HOME/steam
+exec /usr/bin/steam-runtime "$@"

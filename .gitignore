@@ -8,7 +8,10 @@
 !.zshrc
 !.profile
 
+# and these folders
+!.local
 !.config/
+
 !.config/i3
 !.config/i3/config
 #add i3 blocks when finished
@@ -32,6 +35,16 @@
 !.config/newsboat/newsboat-browser.sh
 !.config/zathura
 !.config/zathura/zathurarc
+
+# Program wrappers
+!.local/bin/
+!.local/bin/steam
+!.local/bin/steam-runtime
+
+# Desktop entries
+!.local/share
+!.local/share/applications
+!.local/share/applications/steam.desktop
 
 #Scripts referenced inside i3 config
 !Scripts
