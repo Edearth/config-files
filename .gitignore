@@ -35,6 +35,8 @@
 !.config/newsboat/newsboat-browser.sh
 !.config/zathura
 !.config/zathura/zathurarc
+!.config/vim
+!.config/vim/vimrc
 
 # Program wrappers
 !.local/bin/
