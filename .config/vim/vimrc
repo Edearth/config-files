@@ -25,5 +25,5 @@ if !has('nvim') | set viminfofile=$XDG_CACHE_HOME/vim/viminfo | endif
 :syntax on
 
 " More colorschemes can be found in /usr/share/vim/vim82/colors
-:colorscheme peachpuff
+:colorscheme default
 
