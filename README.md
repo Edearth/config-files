@@ -1,7 +1,3 @@
-# config files
+Update: I moved to a nother distro, desktop environment and everything, so I no longer need most of these configs. I should probably delete this and start over.
 
-* Need to write this description
-* Need to update all colors to match the same schema (use wpgtk for this, it's based on pywal; or just use pywal you lazy fuck!). Remember everything needs to match. i3, polybar, rofi, thunar and X.
-* Consider switching to Kitty (fucking cute name for a terminal emulator!) or Alacritty
-* Consider switching to bspwm, awesomewm or dwm?
-
+I think it was cool to learn how to make all this. I'm keeping this repo public in case someone finds a use in any of the scripts. I should probably keep the git history if I get around to starting this over.
