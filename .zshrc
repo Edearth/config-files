@@ -60,24 +60,5 @@ if [ "$TERM" = "linux" ]; then
     clear
 fi
 
-# @edearth: print hello message
-
-HELLO_MESSAGE=$(cat <<-EndOfHello
-     .-.
-    /:::\\ ________     ______ 
-   /::::/ ___  __ \\_______  /________________________ _
-  / \`-:/  __  /_/ /  _ \\_  __ \\  _ \\  ___/  ___/  __ \`/
- /    /   _  _, _//  __/  /_/ /  __/ /__ / /__ / /_/ / 
- \\   /    /_/ |_| \\___//_.___/\\___/\\___/ \\___/ \\__,_/  
-  \`"\`    
-EndOfHello
-)
-
-#disable screen wrap
-printf '\033[?7l'
-#print stuff
-echo $HELLO_MESSAGE
 echo "Date: `date '+%a %W %b %Y | %H:%M'`"
-#enable screen wrap
-printf '\033[?7h'
 
