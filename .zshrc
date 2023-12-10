@@ -51,6 +51,7 @@ export PYLINTHOME="$XDG_CACHE_HOME"/pylint
 
 alias open="xdg-open"
 
+# TODO: test after config update! It might fail since .Xresources was removed
 # @edearth: if on virtual console, use .Xresources color scheme
 if [ "$TERM" = "linux" ]; then
     _SEDCMD='s/.*\*color\([0-9]\{1,\}\).*#\([0-9a-fA-F]\{6\}\).*/\1 \2/p'
