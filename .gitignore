@@ -42,6 +42,8 @@
 # bigger than half the display's resolution (1920x1080)
 !.config/discord
 !.config/discord/settings.json
+!.config/godot
+!.config/godot/editor_settings-4.tres
 
 # Program wrappers
 !.local/bin/
