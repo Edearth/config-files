@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# A wrapper to launch .exe program (I mostly use it for games) using Valve's
+# Proton. Requires Steam and Proton to be installed in order to use.
+
+STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam STEAM_COMPAT_DATA_PATH=~/.proton  ~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/proton run $1

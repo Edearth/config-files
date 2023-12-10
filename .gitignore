@@ -1,38 +1,26 @@
 # ignore everything
 *
 
-# except these files
+# except:
+# this repo config
 !.gitignore
 !README.md
-!.Xresources
+
+# terminal config
 !.zshrc
 !.profile
 
-# and these folders
-!.local
 !.config/
-
-!.config/i3
-!.config/i3/config
-#add i3 blocks when finished
-!.config/dunst
-!.config/dunst/dunstrc
-!.config/picom
-!.config/picom/picom.conf
-!.config/rofi
-!.config/rofi/config
-!.config/rofi/onedark.rasi
-!.config/termite
-!.config/termite/config
 !.config/kitty
 !.config/kitty/kitty.conf
-!.config/polybar
-!.config/polybar/config
-!.config/polybar/launch-polybar.sh
+
+# rss
 !.config/newsboat/
 !.config/newsboat/config
 !.config/newsboat/urls
 !.config/newsboat/newsboat-browser.sh
+
+# pdf
 !.config/zathura
 !.config/zathura/zathurarc
 !.config/vim
@@ -46,6 +34,7 @@
 !.config/godot/editor_settings-4.tres
 
 # Program wrappers
+!.local
 !.local/bin/
 !.local/bin/steam
 !.local/bin/steam-runtime
@@ -57,11 +46,7 @@
 
 #Scripts referenced inside i3 config
 !Scripts
-!Scripts/crop_screenshot
-!Scripts/full_screenshot
-!Scripts/get-current-volume
-!Scripts/emojis-unicode
-!Scripts/select-emoji.sh
-!Scripts/remindmeto
-!Scripts/alert-sound
-!Scripts/check-updates
+!Scripts/open-in-tabs
+!Scripts/proton
+!Scripts/reboot-to-windows.sh
+!Scripts/toggle-redshift.sh

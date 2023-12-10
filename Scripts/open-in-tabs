@@ -1,0 +1,34 @@
+#!/bin/sh
+set -Eeuo pipefail
+
+usage() {
+  cat >&2 <<EOF
+Usage: $(basename "${BASH_SOURCE[0]}") [-h]
+
+Reads a list of urls from stdin and opens them in firefox as new tabs.
+
+Available options:
+
+-h, --help      Print this help and exit
+EOF
+  exit
+}
+
+read_args() {
+  while :; do
+    case "${1-}" in
+    -h | --help) usage ;;
+    -?*) printf "Unknown option: $1\n" >&2; usage ;;
+    *) break ;;
+    esac
+    shift
+  done
+
+  return 0
+}
+
+read_args "$@"
+
+while read url; do
+  firefox --new-tab --url "$url"
+done
