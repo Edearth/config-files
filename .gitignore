@@ -14,6 +14,9 @@
 !.config/kitty
 !.config/kitty/kitty.conf
 
+!.config/vim
+!.config/vim/vimrc
+
 # rss
 !.config/newsboat/
 !.config/newsboat/config
@@ -23,8 +26,6 @@
 # pdf
 !.config/zathura
 !.config/zathura/zathurarc
-!.config/vim
-!.config/vim/vimrc
 
 # fixes the problem with the window not snapping because the minimum size is
 # bigger than half the display's resolution (1920x1080)
