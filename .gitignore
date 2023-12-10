@@ -38,6 +38,11 @@
 !.config/vim
 !.config/vim/vimrc
 
+# fixes the problem with the window not snapping because the minimum size is
+# bigger than half the display's resolution (1920x1080)
+!.config/discord
+!.config/discord/settings.json
+
 # Program wrappers
 !.local/bin/
 !.local/bin/steam
