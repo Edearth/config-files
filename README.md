@@ -1,7 +1,7 @@
 Config files I use in my desktop computer and laptop. There are quality of life
 features like:
 - Smooth scrolling on Firefox
-- Enable window tiling for Discord and Godot
+- Enable window tiling for Discord and Godot (on resolutions 1920 pixels wide or lower)
 - Random scripts (check out "Scripts/proton", it's great to run Windows games
   downloaded from itch!)
 - Default vim config to show line numbers and enable syntax highlighting
