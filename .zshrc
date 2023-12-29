@@ -51,6 +51,9 @@ export PYLINTHOME="$XDG_CACHE_HOME"/pylint
 
 alias open="xdg-open"
 
+friends_file="~/Documents/obsidian/nepo/friends.md"
+alias friends="friends --filename=\"$friends_file\""
+
 # TODO: test after config update! It might fail since .Xresources was removed
 # @edearth: if on virtual console, use .Xresources color scheme
 if [ "$TERM" = "linux" ]; then
